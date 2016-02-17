@@ -1,0 +1,8 @@
+<h1>Birthdays#index</h1>
+
+<% @birthdays.each do |birthday| %>
+
+<h2><%= link_to birthday.full_name, "/birthdays/#{birthday.id}" %></h2>
+<h2><%= birthday.gift %></h2>
+<hr>
+<% end %>
